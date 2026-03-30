@@ -361,5 +361,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to th
 
 ## License
 
-This project is licensed under the Apache-2.0 License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT-0 License. See [LICENSE](LICENSE) for details.
 

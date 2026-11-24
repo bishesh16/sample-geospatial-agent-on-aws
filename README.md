@@ -22,7 +22,7 @@ An AI agent that analyzes satellite imagery for any location on Earth using natu
 
 | Component | Technology |
 |-----------|------------|
-| **Agent** | [Strands Agents](https://strandsagents.com/latest/) with Claude Sonnet 4.6 on [Amazon Bedrock AgentCore Runtime](https://aws.amazon.com/bedrock/agentcore/) |
+| **Agent** | [Strands Agents](https://strandsagents.com/latest/) with Claude Sonnet 5.5 on [Amazon Bedrock AgentCore Runtime](https://aws.amazon.com/bedrock/agentcore/) |
 | **Tools** | Sentinel-2 imagery, NDVI/NDWI/NBR analysis, OSM boundaries, Amazon Location Service (MCP) hosted on AgentCore Runtime|
 | **UI** | React + TypeScript + MapLibre GL on ECS Fargate behind CloudFront, wt. Cognito auth |
 
@@ -50,7 +50,7 @@ An AI agent that analyzes satellite imagery for any location on Earth using natu
    ```bash
    pip install bedrock-agentcore==1.1.2 bedrock-agentcore-starter-toolkit==0.3.0
    ```
-7. **Bedrock model access** for Claude Sonnet 4.6 in us-east-1 (granted automatically - ensure IAM/SCPs don't restrict it)
+7. **Bedrock model access** for Claude Sonnet 5.5 in us-east-1 (granted automatically - ensure IAM/SCPs don't restrict it)
 
 > **Note:** All Python dependencies (strands-agents, boto3, geospatial libraries) are handled automatically by Docker during deployment. The AgentCore CLI is only needed for the `agentcore configure` and `agentcore launch` commands.
 

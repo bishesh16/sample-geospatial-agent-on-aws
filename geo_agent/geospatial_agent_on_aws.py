@@ -46,7 +46,7 @@ app = BedrockAgentCoreApp()
 
 bedrock_model = BedrockModel(
     model_id=config.MODEL_ID,
-    temperature=config.MODEL_TEMPERATURE,
+    **({"temperature": config.MODEL_TEMPERATURE} if config.MODEL_TEMPERATURE is not None else {}),
 )
     
 mcp_client = MCPClient(

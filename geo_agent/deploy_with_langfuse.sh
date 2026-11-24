@@ -31,7 +31,7 @@ done
 echo "🚀 Deploying AgentCore agent with Langfuse observability..."
 
 # Set defaults for optional variables
-BEDROCK_MODEL_ID="${MODEL_ID:-us.anthropic.claude-sonnet-4-6}"
+BEDROCK_MODEL_ID="${MODEL_ID:-us.anthropic.claude-sonnet-5-5}"
 AWS_REGION="${AWS_REGION:-us-east-1}"
 
 # Build Basic Auth header for OTEL

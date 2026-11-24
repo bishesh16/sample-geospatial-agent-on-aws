@@ -17,8 +17,11 @@ if not S3_BUCKET_NAME:
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 
 # Bedrock Model Configuration
-MODEL_ID = os.getenv("MODEL_ID", "us.anthropic.claude-sonnet-4-6")
-MODEL_TEMPERATURE = float(os.getenv("MODEL_TEMPERATURE", "0.1"))
+MODEL_ID = os.getenv("MODEL_ID", "us.anthropic.claude-sonnet-5-5")
+# Claude Sonnet 5.5 rejects `temperature`, so it is only sent when MODEL_TEMPERATURE is set
+# (e.g. MODEL_TEMPERATURE=0.1 for older models such as us.anthropic.claude-sonnet-4-6).
+_model_temperature = os.getenv("MODEL_TEMPERATURE")
+MODEL_TEMPERATURE = float(_model_temperature) if _model_temperature else None
 MODEL_COSTS = { #see here: https://aws.amazon.com/bedrock/pricing/
             "input": 0.003/1000,
             "cache_read_input_tokens": 0.0003/1000,

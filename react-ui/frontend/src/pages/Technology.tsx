@@ -130,12 +130,12 @@ export function Technology() {
           >
             At its core, the agent is powered by an LLM (
             <a
-              href="https://aws.amazon.com/about-aws/whats-new/2026/02/claude-sonnet-4.6-available-in-amazon-bedrock/"
+              href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#1976d2', textDecoration: 'underline' }}
             >
-              Claude Sonnet 4.6 in Amazon Bedrock
+              Claude Sonnet 5.5 in Amazon Bedrock
             </a>
             ) that is provided with concrete instructions via specialized prompting techniques that enable it to "think". At each turn
             the LLM receives the following information:
@@ -751,7 +751,7 @@ CHANGE DETECTION:
                   platform for any Framework (Strands, LangChain, LangGraph, CrewAI). We use managed runtime and observability capabilities.
                 </li>
                 <li>
-                  <strong>Claude Sonnet 4.6:</strong> Foundation model with up to 1M context window
+                  <strong>Claude Sonnet 5.5:</strong> Foundation model with up to 1M context window
                 </li>
               </ul>
             </div>
